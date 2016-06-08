@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   resources :tasks, except: [:index]
-
-  namespace :v2 do
-    resources :memberships
-  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
